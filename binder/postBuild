@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # Get example data and set up for use
-curl -OL https://www.gstatic.com/alphafoldserver/examplefold_pdb_7bbv/examplefold_pdb_7bbv.zip
-mkdir examplefold_pdb_7bbv
-mv examplefold_pdb_7bbv.zip examplefold_pdb_7bbv/
-cd examplefold_pdb_7bbv
-unzip -o examplefold_pdb_7bbv.zip
+curl -OL https://www.gstatic.com/alphafoldserver/examplefold_pdb_8aw3/examplefold_pdb_8aw3.zip
+mkdir examplefold_pdb_8aw3
+mv examplefold_pdb_8aw3.zip examplefold_pdb_8aw3/
+cd examplefold_pdb_8aw3
+unzip -o examplefold_pdb_8aw3.zip
 cd ~
