@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# clone the content from and place correctly in session. Do it in `start` and not `postBuild` so know I always have latest
+git clone https://github.com/flyark/AFM-LIS
+cp AFM-LIS/*.ipynb .
+cp AFM-LIS/*.pdf .
+cp AFM-LIS/*.png .
+cp AFM-LIS/*.xlsx .
+rm -rf AFM-LIS
+
+
+# replace path to data in originals, just retrieved above, with one to match path to example data in session
+sed -i 's/\/Users\/ah-ramkim\/alphafold3\/examplefold_pdb_8aw3\/examplefold_pdb_8aw3/examplefold_pdb_8aw3/g' *.ipynb 
+
+# this must be last line according to 
+# https://repo2docker.readthedocs.io/en/latest/config_files.html#start-run-code-before-the-user-sessions-starts
+exec "$@"

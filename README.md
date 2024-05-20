@@ -1,3 +1,11 @@
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/fomightez/AFM-LIS-binder/HEAD)
+
+## Attribution for content
+
+This content is not mine!!!   
+I, Wayne, am just demonstrating that this can be set up to be easily used by all without need for Google Colab if use the MyBinder service.  
+See https://github.com/flyark/AFM-LIS for the source of the content by the real developers.
+
 # AlphaFold-Multimer Local Interaction Score (AFM-LIS)
 This repository contains a Jupyter notebook designed to calculate the local interaction score (LIS) from ColabFold-derived outputs (or original AlphaFold-Multimer-derived), including JSON and PDB files. The LIS provides insights into the interaction strength and quality within protein complexes, specifically focusing on the predicted aligned error (PAE). 
 
