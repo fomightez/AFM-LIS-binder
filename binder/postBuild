@@ -1,5 +1,9 @@
 #!/bin/bash
 
-# Set the notebook file to be trusted so that the visualizations with the widget play controller slider,
-# backed by javascript, work when the notebook is reopened in an active session.
-jupyter trust ./index.ipynb 
+# Get example data and set up for use
+curl -OL https://www.gstatic.com/alphafoldserver/examplefold_pdb_7bbv/examplefold_pdb_7bbv.zip
+mkdir examplefold_pdb_7bbv
+mv examplefold_pdb_7bbv.zip examplefold_pdb_7bbv/
+cd examplefold_pdb_7bbv
+unzip -o examplefold_pdb_7bbv.zip
+%cd ~
