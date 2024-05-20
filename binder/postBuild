@@ -6,4 +6,4 @@ mkdir examplefold_pdb_7bbv
 mv examplefold_pdb_7bbv.zip examplefold_pdb_7bbv/
 cd examplefold_pdb_7bbv
 unzip -o examplefold_pdb_7bbv.zip
-%cd ~
+cd ~
