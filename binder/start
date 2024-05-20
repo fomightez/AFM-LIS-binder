@@ -10,7 +10,7 @@ rm -rf AFM-LIS
 
 
 # replace path to data in originals, just retrieved above, with one to match path to example data in session
-sed -i 's/\/Users\/ah-ramkim\/alphafold3\/examplefold_pdb_8aw3\/examplefold_pdb_8aw3/examplefold_pdb_8aw3/g' *.ipynb 
+sed -i 's/\/Users\/ah-ramkim\/alphafold3\/examplefold_pdb_8aw3/examplefold_pdb_8aw3/g' *.ipynb 
 
 # this must be last line according to 
 # https://repo2docker.readthedocs.io/en/latest/config_files.html#start-run-code-before-the-user-sessions-starts
